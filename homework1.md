@@ -94,7 +94,7 @@ cd /etc/yum.repos.d/
 #新建repo
 vi nginx.repo
 
-#在repo中键入该内容
+#在repo中键入该内容,按i键入
 [nginx-stable] 
 name=nginx stable repo 
 baseurl=http://nginx.org/packages/centos/$releasever/$basearch/ 
