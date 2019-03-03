@@ -20,6 +20,7 @@
   </html>
   ```
   
+  ***************
 ## HTML Elements
 **html headings**
 * Browsers automatically add some white space (a margin) before and after a heading.
@@ -113,6 +114,7 @@ HTML elements can be nested (elements can contain elements).
 <p>This is a <br> paragraph with a line break.</p>
 ```
 
+****************
 ## HTML Attributes
 * All HTML elements can have attributes
 * Attributes provide additional information about an element
@@ -173,7 +175,7 @@ This is a paragraph.
 * Always use lowercase attribute names
 * Always quote attribute values with double quotes
 
-
+**************
 ## HTML Text Formatting Elements
 * \<b>	Defines bold text =\<strong>
 * \<em>	Defines emphasized text =\<i>
@@ -186,6 +188,7 @@ This is a paragraph.
 * \<del>	Defines deleted text
 * \<mark>	Defines marked/highlighted text
 
+****************
 ## HTML Quotation and Citation Elements
 * \<abbr>	Defines an abbreviation or acronym
 * \<address>	Defines contact information for the author/owner of a document
