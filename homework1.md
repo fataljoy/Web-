@@ -3,7 +3,7 @@
 1. 完成“任务介绍Web页面”，不使用css和模板，使用15个以上的常用标签
 2. 学习Linux服务器的安装和apache/nginx服务器的配置
 3. 将人物介绍页面部署到服务器
-
+********
 ## 作业完成记录
 ### 1. 首先用html写一份人物介绍web页面，以下是我的代码
 
@@ -141,5 +141,13 @@ scp desktop/cc/geralt_of_rivia.html root@152.136.58.79:/data/www/index.html
 #在服务器终端重新加载配置
 nginx -s reload
 ```
-
+*******
 访问152.136.58.79即可看到web页面
+
+******
+
+![web效果](/webjpg/web_1.jpg)
+
+*********
+
+![web地址](/webjpg/webad_1.png)
