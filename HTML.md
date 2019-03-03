@@ -83,10 +83,13 @@
 </ol>
 
 <dl>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
+  <dt>Coffee</dt>
+  <dd>Coffe is bitter</dd>
+  <dt>Tea</dt>
+  <dd>Tea is bitter, too</dd>
+  <dt>Milk</dt>
+  <dd>Milk is Sweet</dd>
+</dl>
 ```
 
 **Nested HTML Elements**
