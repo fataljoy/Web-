@@ -133,7 +133,7 @@ function myFunction {
 
 **HTML Layouts**
 
-!(/webjpg/layout.gif)
+!(webjpg/layout.gif)
 * \<header> - Defines a header for a document or a section
 * \<nav> - Defines a container for navigation links
 * \<section> - Defines a section in a document
@@ -219,8 +219,8 @@ This is a paragraph.
 ```
 
 **The Class Attribute**
-all HTML elements with the same class attribute will have the same format and style.
-HTML elements can have more than one class name, each class name must be separated by a space.
+* all HTML elements with the same class attribute will have the same format and style.
+* HTML elements can have more than one class name, each class name must be separated by a space.
 ```
 <div class="cities">
   <h2>London</h2>
@@ -238,6 +238,7 @@ HTML elements can have more than one class name, each class name must be separat
 ```
 
 **HTML The id Attribute**
+
 An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements:
 ```
 #myHeader {
