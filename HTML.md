@@ -55,6 +55,7 @@
 ```
 
 **html links**
+
 targrt attributes
 * blank - Opens the linked document in a new window or tab
 * self - Opens the linked document in the same window/tab as it was clicked (this is default)
