@@ -299,5 +299,5 @@ close to 5 million globally.
 * \<aside> - Defines content aside from the content (like a sidebar)
 * \<footer> - Defines a footer for a document or a section
 * \<details> - Defines additional details
-* \<summary> - Defines a heading for the <details> element
+* \<summary> - Defines a heading for the \<details> element
   
