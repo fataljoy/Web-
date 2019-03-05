@@ -55,8 +55,15 @@
 ```
 
 **html links**
+targrt attributes
+* blank - Opens the linked document in a new window or tab
+* self - Opens the linked document in the same window/tab as it was clicked (this is default)
+* parent - Opens the linked document in the parent frame
+* top - Opens the linked document in the full body of the window
+
 ```
 <a href="https://www.fataljoy.com">This is a link</a>
+<a href="https://www.fataljoy.com/" target="_blank">Visit Joy's homepage!</a>
 ```
 
 **html images**
@@ -93,6 +100,35 @@
 </dl>
 ```
 
+**HTML Iframes**
+An iframe is used to display a web page within a web page.
+```
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="https://www.fataljoy.com" target="iframe_a">fataljoy.com</a></p>
+```
+
+**HTML Header**
+* \<head>	Defines information about the document
+* \<title>	Defines the title of a document
+* \<base>	Defines a default address or a default target for all links on a page
+* \<link>	Defines the relationship between a document and an external resource
+* \<meta>	Defines metadata about an HTML document
+* \<script>	Defines a client-side script
+* \<style>	Defines style information for a document
+
+```
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function myFunction {
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+```
+
 **Nested HTML Elements**
 
 HTML elements can be nested (elements can contain elements).
@@ -110,6 +146,7 @@ HTML elements can be nested (elements can contain elements).
 **Empty HTML Elements**
 * HTML elements with no content are called empty elements.
 * Empty elements can be "closed" in the opening tag like this: \<br />.
+\<img>
 ```
 <p>This is a <br> paragraph with a line break.</p>
 ```
@@ -166,6 +203,37 @@ This is a paragraph.
 </p>
 ```
 
+**The Class Attribute**
+all HTML elements with the same class attribute will have the same format and style.
+HTML elements can have more than one class name, each class name must be separated by a space.
+```
+<div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+<h2 class="city main">London</h2>
+
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+```
+
+**HTML The id Attribute**
+An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements:
+```
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+```
+
+
 **Summary for Attribute**
 * All HTML elements can have attributes
 * The title attribute provides additional "tool-tip" information
@@ -206,3 +274,15 @@ close to 5 million globally.
 </blockquote>
 <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 ```
+
+************************
+## HTML Layout Elements
+* \<header> - Defines a header for a document or a section
+* \<nav> - Defines a container for navigation links
+* \<section> - Defines a section in a document
+* \<article> - Defines an independent self-contained article
+* \<aside> - Defines content aside from the content (like a sidebar)
+* \<footer> - Defines a footer for a document or a section
+* \<details> - Defines additional details
+* \<summary> - Defines a heading for the <details> element
+  
