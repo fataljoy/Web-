@@ -102,6 +102,7 @@ targrt attributes
 ```
 
 **HTML Iframes**
+
 An iframe is used to display a web page within a web page.
 ```
 <iframe src="demo_iframe.htm" name="iframe_a"></iframe>
@@ -131,6 +132,7 @@ function myFunction {
 ```
 
 **HTML Layouts**
+
 !(webjpg/layout.jpg)
 * \<header> - Defines a header for a document or a section
 * \<nav> - Defines a container for navigation links
@@ -139,7 +141,7 @@ function myFunction {
 * \<aside> - Defines content aside from the content (like a sidebar)
 * \<footer> - Defines a footer for a document or a section
 * \<details> - Defines additional details
-* \<summary> - Defines a heading for the <details> element
+* \<summary> - Defines a heading for the \<details> element
 
 
 **Nested HTML Elements**
