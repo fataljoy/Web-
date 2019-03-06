@@ -2,6 +2,8 @@
 
 CSS(Cascading Style Sheets)  is a language for specifying how documents are presented to users — how they are styled, laid out, etc.
 
+**********************
+
 ## How to apply your CSS to your HTML
 **External stylesheet**
 ```
@@ -73,3 +75,123 @@ p {
   </body>
 </html>
 ```
+
+*********************
+## CSS statements
+
+* The @media at-rule content is applied only if the device which runs the browser matches the expressed condition;
+* the @supports at-rule content is applied only if the browser actually supports the tested feature;
+* the @document at-rule content is applied only if the current page matches some conditions.
+```
+@media (min-width: 801px) {
+  body {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
+```
+
+*****************
+
+## Comments
+
+Comments in CSS begin with /* and end with */.
+
+**************
+
+## Shorthand
+
+Some properties like font, background, padding, border, and margin are called shorthand properties — this is because they allow you to set several property values in a single line, saving time and making your code neater in the process.
+
+
+> in shorthand like padding and margin, the values are applied
+> in the order top, right, bottom, left (the same order as an analog clock). There are also other 
+> shorthand types, for example two values, which set for example
+> the padding for top/bottom, then left/right
+```
+padding: 10px 15px 15px 5px;
+
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 5px;
+```
+
+or
+
+```
+background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+
+background-color: red;
+background-image: url(bg-graphic.png);
+background-position: 10px 10px;
+background-repeat: repeat-x;
+background-scroll: fixed;
+```
+
+*****************
+
+## Selectors
+
+**Class selectors**
+
+The class selector consists of a dot, '.', followed by a class name. A class name is any value, without spaces, placed within an HTML class attribute. It is up to you to choose a name for the class. It is also noteworthy that multiple elements in a document can have the same class value, and a single element can have multiple class names separated by white space.
+```
+<ul>
+  <li class="first done">Create an HTML document</li>
+  <li class="second done">Create a CSS style sheet</li>
+  <li class="third">Link them all together</li>
+</ul>
+
+/* The element with the class "first" is bolded */
+.first {
+  font-weight: bold;
+}
+
+/* All the elements with the class "done" are strikethrough */
+.done {
+  text-decoration: line-through;
+}
+```
+
+**ID selectors**
+
+The ID selector consists of a hash/pound symbol (#), followed by the ID name of a given element. Any element can have a unique ID name set with the id attribute. It is up to you to choose an ID name. It's the most efficient way to select a single element.
+
+```
+<p id="rude"> — "Go away!"</p>
+
+#rude {
+  font-family: monospace;
+  text-transform: uppercase;
+}
+```
+
+**Universal selector**
+
+The universal selector (*) is the ultimate joker. It allows selecting all elements on a page. As it is rarely used to apply a style to every element on a page, it is often used in combination with other selectors
+
+>Important: Take care when using the universal selector. As it applies to all elements, using it in large web pages can have a >perceptible impact on performance: web pages display slower than expected. There are not many instances where you'd use this selector.
+
+```
+<div>
+  <p>I think the containing box just needed
+  a <strong>border</strong> or <em>something</em>,
+  but this is getting <strong>out of hand</strong>!</p>
+</div>
+
+* {
+  padding: 5px;
+  border: 1px solid black;
+  background: rgba(255,0,0,0.25)
+}
+```
+
+**Presence and value attribute selectorsEdit**
+
+* [attr] : This selector will select all elements with the attribute attr, whatever its value.
+* [attr=val] : This selector will select all elements with the attribute attr, but only if its value is val.
+* [attr~=val]: This selector will select all elements with the attribute attr, but only if  val is one of a space-separated list of words contained in attr's value. 
+* [attr^=val] : This selector will select all elements with the attribute attr for which the value starts with val.
+* [attr$=val] : This selector will select all elements with the attribute attr for which the value ends with val.
+* [attr*=val] : This selector will select all elements with the attribute attr for which the value contains the substring val. (A substring is simply part of a string, e.g. "cat" is a substring in the string "caterpillar".) 
