@@ -187,7 +187,7 @@ The universal selector (*) is the ultimate joker. It allows selecting all elemen
 }
 ```
 
-**Presence and value attribute selectorsEdit**
+**Presence and value attribute selectors**
 
 * [attr] : This selector will select all elements with the attribute attr, whatever its value.
 * [attr=val] : This selector will select all elements with the attribute attr, but only if its value is val.
