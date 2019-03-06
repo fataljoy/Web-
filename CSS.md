@@ -171,7 +171,7 @@ The ID selector consists of a hash/pound symbol (#), followed by the ID name of 
 
 The universal selector (*) is the ultimate joker. It allows selecting all elements on a page. As it is rarely used to apply a style to every element on a page, it is often used in combination with other selectors
 
->Important: Take care when using the universal selector. As it applies to all elements, using it in large web pages can have a >perceptible impact on performance: web pages display slower than expected. There are not many instances where you'd use this selector.
+>**Important:** Take care when using the universal selector. As it applies to all elements, using it in large web pages can have a >perceptible impact on performance: web pages display slower than expected. There are not many instances where you'd use this selector.
 
 ```
 <div>
@@ -256,6 +256,7 @@ a:focus {
 **Pseudo-elements**
 
 Pseudo-elements are very much like pseudo-classes, but they have differences. They are keywords, this time preceded by two colons (::), that can be added to the end of selectors to select a certain part of an element.
+
 ::after
 ::before
 ::first-letter
