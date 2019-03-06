@@ -195,3 +195,86 @@ The universal selector (*) is the ultimate joker. It allows selecting all elemen
 * [attr^=val] : This selector will select all elements with the attribute attr for which the value starts with val.
 * [attr$=val] : This selector will select all elements with the attribute attr for which the value ends with val.
 * [attr*=val] : This selector will select all elements with the attribute attr for which the value contains the substring val. (A substring is simply part of a string, e.g. "cat" is a substring in the string "caterpillar".) 
+
+
+**Pseudo-classes**
+
+:active
+:checked
+:default
+:dir
+:disabled
+:empty
+:enabled
+:first
+:first-child
+:first-of-type
+:fullscreen
+:focus
+:focus-within
+:hover
+:indeterminate
+:in-range
+:invalid
+:lang
+:last-child
+:last-of-type
+:left
+:link
+:matches()
+:not
+:nth-child
+:nth-last-child
+:nth-last-of-type
+:nth-of-type
+:only-child
+:only-of-type
+:optional
+:out-of-range
+:read-only
+:read-write
+:required
+:right
+:root
+:scope
+:target
+:valid
+:visited
+```
+<a href="https://www.github.com/" target="_blank"GITHUB</a>
+/* We highlight the link when it is
+   hovered over (mouse over), activated (mouse down)
+   or focused (keyboard) */
+a:hover,
+a:active,
+a:focus {
+  color: darkred;
+  text-decoration: none;
+}
+```
+
+**Pseudo-elements**
+
+Pseudo-elements are very much like pseudo-classes, but they have differences. They are keywords, this time preceded by two colons (::), that can be added to the end of selectors to select a certain part of an element.
+::after
+::before
+::first-letter
+::first-line
+::selection
+::backdrop
+
+```
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a> defined in the MDN glossary.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> defined in the MDN glossary.</li>
+</ul>
+
+/* All elements with an attribute "href" with values
+   starting with "http" will have an arrow added after their
+   content (to indicate they are external links) */
+[href^=http]::after {
+  content: '⤴';
+}
+```
+
+
