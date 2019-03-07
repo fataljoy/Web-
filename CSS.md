@@ -299,7 +299,7 @@ Pseudo-elements are very much like pseudo-classes, but they have differences. Th
 2. 可左右移动，直到碰到包含框或另一个浮动框边缘
 3. 行内放不下则向下移动
 浮动实验
-4. 清楚浮动 clear
+4. 清除浮动 clear
 clear:none|left|right|both
 * none:
 * left:
