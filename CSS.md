@@ -5,7 +5,7 @@ CSS(Cascading Style Sheets)  is a language for specifying how documents are pres
 **********************
 
 ## How to apply your CSS to your HTML
-**External stylesheet**
+**External stylesheet外部样式表**
 ```
 <!DOCTYPE html>
 <html>
@@ -34,7 +34,7 @@ p {
 
 
 
-**Internal stylesheet**
+**Internal stylesheet内部样式表**
 ```
 <!DOCTYPE html>
 <html>
@@ -61,7 +61,7 @@ p {
 ```
 
 
-**Inline styles**
+**Inline styles内联样式表**
 ```
 <!DOCTYPE html>
 <html>
