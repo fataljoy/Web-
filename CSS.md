@@ -5,7 +5,7 @@ CSS(Cascading Style Sheets)  is a language for specifying how documents are pres
 **********************
 
 ## How to apply your CSS to your HTML
-**External stylesheet外部样式表**
+**External stylesheet 外部样式表**
 ```
 <!DOCTYPE html>
 <html>
@@ -34,7 +34,7 @@ p {
 
 
 
-**Internal stylesheet内部样式表**
+**Internal stylesheet 内部样式表**
 ```
 <!DOCTYPE html>
 <html>
@@ -61,7 +61,7 @@ p {
 ```
 
 
-**Inline styles内联样式表**
+**Inline styles内 联样式表**
 ```
 <!DOCTYPE html>
 <html>
@@ -77,7 +77,7 @@ p {
 ```
 
 *********************
-## CSS statements
+## CSS statements 声明
 
 * The @media at-rule content is applied only if the device which runs the browser matches the expressed condition;
 * the @supports at-rule content is applied only if the browser actually supports the tested feature;
@@ -133,7 +133,7 @@ background-scroll: fixed;
 
 ## Selectors
 
-**Class selectors**
+**Class selectors 类选择器**
 
 The class selector consists of a dot, '.', followed by a class name. A class name is any value, without spaces, placed within an HTML class attribute. It is up to you to choose a name for the class. It is also noteworthy that multiple elements in a document can have the same class value, and a single element can have multiple class names separated by white space.
 ```
@@ -154,7 +154,7 @@ The class selector consists of a dot, '.', followed by a class name. A class nam
 }
 ```
 
-**ID selectors**
+**ID selectors ID选择器**
 
 The ID selector consists of a hash/pound symbol (#), followed by the ID name of a given element. Any element can have a unique ID name set with the id attribute. It is up to you to choose an ID name. It's the most efficient way to select a single element.
 
@@ -277,5 +277,35 @@ Pseudo-elements are very much like pseudo-classes, but they have differences. Th
   content: '⤴';
 }
 ```
+
+
+
+## CSS盒模型
+
+* Margin 外边距
+* Border 边框
+* Padding 内边距
+* Content 内容
+
+
+## CSS定位
+* absolute(嵌套后相对于已定位的祖先）
+* relative（相对于普通流位置）
+
+
+
+## 浮动
+1. 可脱离普通流
+2. 可左右移动，直到碰到包含框或另一个浮动框边缘
+3. 行内放不下则向下移动
+浮动实验
+4. 清楚浮动 clear
+clear:none|left|right|both
+* none:
+* left:
+* right:
+* both: 
+
+
 
 
