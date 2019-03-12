@@ -124,3 +124,179 @@
     </body> 
 </html>
 ```
+
+###2. 添加自定义的CSS Style，使用外部链接格式。以下为css代码：
+```
+.header, .cite, .main1{    
+  margin-left:auto;
+  margin-right:auto;
+}
+body,html{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  display:table
+}
+body{
+  margin: 0;
+  padding: 100px;
+	width:80%; 
+	height:600px; 
+	background: -webkit-linear-gradient(top, #fafafa, #6e2a2a);   /* 颜色渐变*/
+		
+	} 
+  .item1 {
+    background: #6e2a2a;
+    grid-area: header;
+    padding: 20px;
+  }
+  
+  .item2 {
+    background: rgb(255, 255, 255);
+    grid-area: advert;
+
+  }
+  
+  .item3 {
+    background:#fafafa;
+    grid-area: content;
+    padding: 20px;
+  }
+  
+  .item4 {
+    background: #6e2a2a;
+    grid-area: footer;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    font-size: 0.8em;
+    min-height: 600px;
+    width: 100%;
+    background:-webkit-linear-gradient(top, #6e2a2a,#fafafa);  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "advert"
+      "content"
+      "footer";
+  }
+  
+  @media (min-width: 300px){
+    .container{
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    }
+  }
+  
+  @media (min-width: 400px){
+    .container{
+
+    
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    
+
+    }
+  }
+
+
+
+
+.cite{
+  color: #6e2a2a;
+}
+
+
+
+#rect {
+    height: 50px;
+    width: 100%;
+    margin: 70px auto;
+    border-radius: 10px;
+    position: relative;
+    color:#fff;
+  }
+
+#rect {
+  animation-name: rainbow;
+  animation-duration: 3s;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color:#6e2a2a;
+    color: #fff;
+    top: 0px;
+    left: 0px;
+    
+  }
+  50% {
+    background-color:#ffffff;
+    top:80px;
+    left: 100px;
+    
+  }
+  100% {
+    background-color:#6e2a2a;
+    color: #fff;
+
+    top:0px;
+    left: 0px;
+    
+  }
+}
+
+
+  #ball {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    position: fixed;
+    left: 5%;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #fafafa,
+      #6e2a2a
+    );
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes fade {
+
+    50% {
+      left: 80%;
+      opacity: 0.1;
+    }
+  }
+
+  #nav {
+    width: auto;
+    height:100%;
+    top:340px;
+    margin: 0 auto;
+    padding:5px;
+    color: #fafafa;
+    position: fixed;
+    left: 7.9%;
+    border-radius: 0;
+    background: 
+      #6e2a2a
+    
+  }
+  ```
+  
+  ### 3.按照homework1的经验部署服务器。因为需要上传两个文件，所以要进行一些小小的改动。
