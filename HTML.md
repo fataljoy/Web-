@@ -133,7 +133,7 @@ function myFunction {
 
 **HTML Layouts**
 
-!(webjpg/layout.gif)
+!(webjpg/layout.jpg)
 * \<header> - Defines a header for a document or a section
 * \<nav> - Defines a container for navigation links
 * \<section> - Defines a section in a document
