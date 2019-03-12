@@ -4,9 +4,7 @@
 2. 在上次作业(基于HTML的"人物介绍")基础上,增加CSS,美化页面,部署到服务器URL可以分享到群里
 
 ## 作业流程
-
-### 
-
+*************************
 ### 作业二：
 ### 1. 基于上次作业的html文件，见homework1，设置外部css格式，并链接到html文档。以下是我修改过的html代码：
 ```
@@ -310,3 +308,105 @@ body{
   
   ************
   ![web效果](/webjpg/homework_2.jpg)
+  
+  
+  
+  *******************
+  ### 作业一：
+  
+  1. 在网上下载一个登陆页面psd
+  2. 根据psd配置html和css文件
+  
+  ### 以下是html和css（内部）文件代码：
+ 
+  ```
+  <!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Joy Login Page</title>
+  <style>
+		#content,.login,.login-card h1{
+			text-align:center
+		}
+		body,html{
+			margin:0;
+			padding:0;
+			width:100%;
+			height:100%;
+			display:table;
+		}
+		body{
+			background-image: url("ac.jpg");
+			background-size: 1280px 768px;;
+		} 
+		#content{
+			display:table-cell;
+			vertical-align:middle;
+		}
+		.login-card{
+			padding:40px;
+			width:274px;
+			background-color:#F7F7F7;
+			margin:0 auto 10px;
+			border-radius:2px;
+			box-shadow:0 2px 2px #000000;
+		}
+		.login-card h1 span{
+			color:#f1e3dc;
+		}
+		.login-card img{
+			width:50%;
+			height:50%;
+		}
+		.login-card input[type=submit]{
+			width:100%;display:block;
+			margin-bottom:10px;
+			position:relative;
+		}
+		.login-card input[type=text],input[type=password]{
+			height:44px;
+			font-size:16px;
+			width:100%;
+			margin-bottom:10px;
+			background:border:1px solid #d9d9d9;
+			border-top:1px solid silver;
+			padding:0 8px;
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+		}
+		.login{
+			font-size:14px;
+			font-weight:700;
+			height:36px;
+			padding:0 8px;
+		}
+		.login-submit{
+			color:#fff;
+			background-color:#585858;
+		}
+
+  </style>
+</head>
+
+<body>
+		
+<div id="content">
+	<div class="login-card">
+		<img src="ac2.png"/><br>
+ 		<h1></h1>
+	  <form name="login_form" method="post" action="non">
+		<input type="text" name="joy_user" placeholder="请输入用户名" id="joy_user">
+		<input type="password" name="joy_pass" placeholder="请输入密码" id="joy_pass">
+		<input type="submit" name="accept" class="login login-submit" value="登录" id="login">
+	  </form>
+	</div>
+</div>
+</body>
+</html>
+```
+***************
+![登陆页面](/webjpg/login.jpg "login page")
+  
