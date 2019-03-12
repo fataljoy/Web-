@@ -125,7 +125,7 @@ cat /etc/nginx/nginx.conf
 vi /etc/nginx/conf.d/default.conf
 
 #添加映射到我们即将存放html文件的路径
-#添加到原有location 下面一行
+#添加到原有location 下面一行,并删除或注释掉原有的location
     location / {        root   /data/www;    }
  
 #创建新路径
