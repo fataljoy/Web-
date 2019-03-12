@@ -13,7 +13,7 @@
         <meta charset="UTF-8">    
         <meta name="author" content="FatalJoy">
         <title>Geralt of Rivia</title> 
-        <link rel="stylesheet" href="geralt_1.css">
+        <link rel="stylesheet" href="css/geralt_1.css">
     </head> 
     
     <body> 
@@ -127,7 +127,7 @@
 
 ###2. 添加自定义的CSS Style，使用外部链接格式。以下为css代码：
 ```
-.header, .cite, .main1{    
+.header, .cite, .main{    
   margin-left:auto;
   margin-right:auto;
 }
@@ -305,4 +305,5 @@ body{
   3. 其余步骤按照homework1 中的部署操作进行。
   4. 访问188.131.236.127即可看到页面。
   
-  
+  ************
+  ![web效果](/webjpg/homework_2.jpg)
