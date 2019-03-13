@@ -125,7 +125,12 @@ position:absolute;
 </html>
 ```
 ***************
-![登陆页面](/webjpg/login.jpg "login page")
+
+### 以下是我下载的psd原图：
+![原图](/webjpg/psd.png "login page")
+
+### 以下是我做的html登录界面：
+![登陆页面](/webjpg/psd_login.jpg "login page")
   
 ### 作业二：
 ### 1. 基于上次作业的html文件，见homework1，设置外部css格式，并链接到html文档。以下是我修改过的html代码：
