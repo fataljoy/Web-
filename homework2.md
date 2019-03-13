@@ -5,6 +5,128 @@
 
 ## 作业流程
 *************************
+  ### 作业一：
+  
+  1. 在千图网（www.58pic.com） 上下载一个psd格式的登录界面。
+  2. 这是我下载的链接：https://www.58pic.com/wangye/11457749.html
+  3. 根据psd配置html和css文件
+  4. 部署到web服务器
+  
+  ### 以下是html和css（内部）文件代码：
+ 
+  ```
+  <!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Joy Login Page</title>
+<style>
+body,html{
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+display:table;
+}
+
+body{
+background-image: url("png/bg.png");
+background-size: 1280px 768px;;
+} 
+
+#content{
+display:table-cell;
+vertical-align:middle;
+}
+
+.login-card{
+padding:40px；
+width:274px;
+background-color:rgb(255, 255, 255);
+margin:0 auto 0;
+box-shadow:0 2px 2px #000000;
+}
+
+.login-card input[type=submit]{
+width:35%;
+height:44px;
+display:block;
+margin-bottom:0;
+position:relative;
+border-radius:5px;
+}
+
+.login-card input[type=text],input[type=password]{
+height:44px;
+font-size:16px;
+width:100%;
+margin-bottom:10px;
+border-top:1px solid rgb(219, 219, 219);
+padding:0 8px;
+border-radius:5px;
+box-align: center;
+			
+	
+		}
+
+
+.login-submit{
+font-size:14px;
+font-weight:700;
+height:36px;
+padding:2 0px;	
+color:rgb(134, 134, 134);
+background-color:#f7f7f7;
+width:40px;
+}
+
+#log1{
+color:rgb(134, 134, 134);
+height:30px;
+width:24.5%;
+line-height:30px;
+overflow:hidden;
+left:463px;
+padding:20px;
+margin-left:0;
+background-color:#eaeaea;
+position:relative;
+box-shadow:0 0 2px #000000;
+text-indent:2%;
+			
+		}
+#reset{
+color:#ffffff;
+text-align:center;
+top: 450px;
+left:550px;
+position:absolute;
+		}
+		
+  </style>
+</head>
+
+<body>
+		
+<div id="content">
+		<div id="log1">Login to your app</div>
+	<div class="login-card">
+	  <form name="login_form" method="post" action="non">
+		<input type="text" name="joy_user" placeholder="Username" id="joy_user">
+		<input type="password" name="joy_pass" placeholder="Password" id="joy_pass">
+		<input type="submit" name="accept" class="login-submit" value="Login" id="login">
+	  </form>
+	</div>
+</div>
+<div id="reset">or reset your password</div>
+</body>
+</html>
+```
+***************
+![登陆页面](/webjpg/login.jpg "login page")
+  
 ### 作业二：
 ### 1. 基于上次作业的html文件，见homework1，设置外部css格式，并链接到html文档。以下是我修改过的html代码：
 ```
@@ -312,101 +434,4 @@ body{
   
   
   *******************
-  ### 作业一：
-  
-  1. 在网上下载一个登陆页面psd
-  2. 根据psd配置html和css文件
-  
-  ### 以下是html和css（内部）文件代码：
- 
-  ```
-  <!DOCTYPE html>
-<html>
 
-<head>
-
-  <meta charset="UTF-8">
-  <title>Joy Login Page</title>
-  <style>
-		#content,.login,.login-card h1{
-			text-align:center
-		}
-		body,html{
-			margin:0;
-			padding:0;
-			width:100%;
-			height:100%;
-			display:table;
-		}
-		body{
-			background-image: url("ac.jpg");
-			background-size: 1280px 768px;;
-		} 
-		#content{
-			display:table-cell;
-			vertical-align:middle;
-		}
-		.login-card{
-			padding:40px;
-			width:274px;
-			background-color:#F7F7F7;
-			margin:0 auto 10px;
-			border-radius:2px;
-			box-shadow:0 2px 2px #000000;
-		}
-		.login-card h1 span{
-			color:#f1e3dc;
-		}
-		.login-card img{
-			width:50%;
-			height:50%;
-		}
-		.login-card input[type=submit]{
-			width:100%;display:block;
-			margin-bottom:10px;
-			position:relative;
-		}
-		.login-card input[type=text],input[type=password]{
-			height:44px;
-			font-size:16px;
-			width:100%;
-			margin-bottom:10px;
-			background:border:1px solid #d9d9d9;
-			border-top:1px solid silver;
-			padding:0 8px;
-			box-sizing:border-box;
-			-moz-box-sizing:border-box;
-		}
-		.login{
-			font-size:14px;
-			font-weight:700;
-			height:36px;
-			padding:0 8px;
-		}
-		.login-submit{
-			color:#fff;
-			background-color:#585858;
-		}
-
-  </style>
-</head>
-
-<body>
-		
-<div id="content">
-	<div class="login-card">
-		<img src="ac2.png"/><br>
- 		<h1></h1>
-	  <form name="login_form" method="post" action="non">
-		<input type="text" name="joy_user" placeholder="请输入用户名" id="joy_user">
-		<input type="password" name="joy_pass" placeholder="请输入密码" id="joy_pass">
-		<input type="submit" name="accept" class="login login-submit" value="登录" id="login">
-	  </form>
-	</div>
-</div>
-</body>
-</html>
-```
-***************
-![登陆页面](/webjpg/login.jpg "login page")
-  
