@@ -11,7 +11,7 @@
   2. 这是我下载的链接：https://www.58pic.com/wangye/11457749.html
   3. 根据psd配置html和css文件
   4. 部署到web服务器
-  5. 访问http://188.131.236.127/psd/psd_login.html即可查看
+  5. 访问http://188.131.236.127/psd/psd_login.html  即可查看
   
   ### 以下是html和css（内部）文件代码：
  
