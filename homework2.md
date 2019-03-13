@@ -15,103 +15,107 @@
   ### 以下是html和css（内部）文件代码：
  
   ```
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
 
-<meta charset="UTF-8">
-<title>Joy Login Page</title>
-<style>
-body,html{
-margin:0;
-padding:0;
-width:100%;
-height:100%;
-display:table;
-}
-
-body{
-background-image: url("png/bg.png");
-background-size: 1280px 768px;;
-} 
-
-#content{
-display:table-cell;
-vertical-align:middle;
-}
-
-.login-card{
-padding:40px；
-width:274px;
-background-color:rgb(255, 255, 255);
-margin:0 auto 0;
-box-shadow:0 2px 2px #000000;
-}
-
-.login-card input[type=submit]{
-width:35%;
-height:44px;
-display:block;
-margin-bottom:0;
-position:relative;
-border-radius:5px;
-}
-
-.login-card input[type=text],input[type=password]{
-height:44px;
-font-size:16px;
-width:100%;
-margin-bottom:10px;
-border-top:1px solid rgb(219, 219, 219);
-padding:0 8px;
-border-radius:5px;
-box-align: center;
-			
-	
+  <meta charset="UTF-8">
+  <title>Joy Login Page</title>
+  <style>
+		body,html{
+			margin:0;
+			padding:0;
+			width:100%;
+			height:100%;
+			display:table;
+			top: 0;
+    		left: 0;
+   			right: 0;
+			bottom: 0;
 		}
-
-
-.login-submit{
-font-size:14px;
-font-weight:700;
-height:36px;
-padding:2 0px;	
-color:rgb(134, 134, 134);
-background-color:#f7f7f7;
-width:40px;
-}
-
-#log1{
-color:rgb(134, 134, 134);
-height:30px;
-width:24.5%;
-line-height:30px;
-overflow:hidden;
-left:463px;
-padding:20px;
-margin-left:0;
-background-color:#eaeaea;
-position:relative;
-box-shadow:0 0 2px #000000;
-text-indent:2%;
+		body{
+			background-image: url("png/bg.png");
+			background-size: 1280px 768px;;
+		} 
+		#content{
+			display:table-cell;
+			vertical-align:middle;
 			
 		}
-#reset{
-color:#ffffff;
-text-align:center;
-top: 450px;
-left:550px;
-position:absolute;
+		.login-card{
+			padding:40px;
+			width:274px;
+			background-color:rgb(255, 255, 255);
+			margin:0 auto 0;
+			box-shadow:0 2px 2px #000000;
 		}
+
+		.login-card input[type=submit]{
+			width:35%;
+			height:44px;
+			display:block;
+			margin-bottom:0;
+			position:relative;
+			border-radius:5px;
+			
+		}
+		.login-card input[type=text],input[type=password]{
+			height:44px;
+			font-size:16px;
+			width:100%;
+			margin-bottom:10px;
+			border-top:1px solid rgb(219, 219, 219);
+			padding:0 8px;
+			border-radius:5px;
+			box-align:center;
 		
+		}
+
+		.login-submit{
+			color:rgb(134, 134, 134);
+			background-color:#f7f7f7;
+			width:40px;
+			font-size:14px;
+			font-weight:700;
+			height:36px;
+			padding:2 0px;
+		}
+		#log1{
+			color:rgb(134, 134, 134);
+			height:30px;
+			width:314.5px;
+			line-height:30px;
+			overflow:hidden;
+			left:463px;
+			padding:20px;
+			margin-left:0;
+			background-color:#eaeaea;
+			position:relative;
+			box-shadow:0 0 2px #000000;
+			text-indent:2%;
+			top: 50%;
+    		left: 50%;
+    		margin-left: -177px;
+    		margin-top: -15px;
+		
+			
+		}
+      #reset{
+			color:#ffffff;
+			text-align:center;
+			position:absolute;
+			top: 500px;
+    		left: 550px;
+
+		}
   </style>
 </head>
 
 <body>
 		
 <div id="content">
-		<div id="log1">Login to your app</div>
+	<div id="log1">Login to your app</div>
 	<div class="login-card">
 	  <form name="login_form" method="post" action="non">
 		<input type="text" name="joy_user" placeholder="Username" id="joy_user">
@@ -119,8 +123,9 @@ position:absolute;
 		<input type="submit" name="accept" class="login-submit" value="Login" id="login">
 	  </form>
 	</div>
+	<div id="reset">or reset your password</div>
 </div>
-<div id="reset">or reset your password</div>
+
 </body>
 </html>
 ```
