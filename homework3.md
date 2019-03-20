@@ -427,7 +427,7 @@ body {
 
 ### 登录界面展示
 * 点击登录可跳转至日程管理界面
-![login](/webjpg/login_sql .jpg)
+![login](/webjpg/login_sql.jpg)
 
 ### 日程管理界面展示
 ![login](/webjpg/sql.jpg)
