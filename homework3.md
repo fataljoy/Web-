@@ -4,7 +4,7 @@
 *********************
 
 ### 日程管理的登录界面
-
+* 登录界面沿用上次的login page，并将登录按钮链接到日程管理页面。
 ```
 <!DOCTYPE html>
 <html>
@@ -121,7 +121,14 @@
 </html>
 ```
 
-### 日程管理HTML界面设计，代码如下
+### 登录界面展示
+* 点击登录可跳转至日程管理界面
+![login](/webjpg/login_sql.jpg)
+
+
+### 日程管理HTML界面设计
+* 采用日历的形式
+* 可在日历中直接加入事项
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -425,9 +432,6 @@ body {
 }
 ```
 
-### 登录界面展示
-* 点击登录可跳转至日程管理界面
-![login](/webjpg/login_sql.jpg)
 
 ### 日程管理界面展示
 ![login](/webjpg/sql.jpg)
