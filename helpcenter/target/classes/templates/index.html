@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HelpCenter</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{css/bootstrap.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/default.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/helpcenter.css}">
+</head>
+
+<body style="background: #2A3744">
+<div class="wrapper">
+    <header style="background: orange">
+        <div class="left">
+            <button id="menu" title="Menu" class=""><i class="fa fa-bars fa-2x"></i></button>
+            <h1 style="color: white">Jekyll Help Center</h1>
+        </div>
+
+    </header>
+    <!--//Header-->
+    <div class="content">
+        <aside>
+            <div class="row pre-scrollable" style="min-height: 500px">
+                <div class="controls">
+                    <input type="search" id="search" name="search" placeholder="Search the help center...">
+                    <label for="search"><i class="fa fa-search"></i></label>
+                </div>
+                <nav class="site-nav">
+                    <ul class="nav sidebar-nav">
+
+                        <li>
+                            <a href="#" class="single" data-dir="introduction" data-md="introduction" data-index="1">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Getting Started!
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" data-dir="getting_started">
+                                <li><a href="#" data-md="blogs_news" data-index="0">Blogs News</a></li>
+                                <li><a href="#" data-md="generate_pdfs" data-index="1">Generate Pdfs</a></li>
+                                <li><a href="#" data-md="links" data-index="1">Links</a></li>
+                                <li><a href="#" data-md="markdown" data-index="0">Markdown</a></li>
+                                <li><a href="#" data-md="offline_viewing" data-index="0">Offline Viewing</a></li>
+                                <li><a href="#" data-md="page_frontmatter" data-index="0">Page Frontmatter</a></li>
+                                <li><a href="#" data-md="publish_on_github_pages" data-index="1">Publish On Github</a>
+                                </li>
+                                <li><a href="#" data-md="sidebar" data-index="1">Sidebar</a></li>
+                                <li><a href="#" data-md="store_topics" data-index="0">Store Topics</a></li>
+                                <li><a href="#" data-md="theme" data-index="0">Theme</a></li>
+                                <li><a href="#" data-md="top_navigation" data-index="1">Top Navigation</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Help Center Example
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" data-dir="help_center_example">
+                                <li><a href="#" data-md="Add_files" data-index="0">Add Files</a></li>
+                                <li><a href="#" data-md="Change_Style" data-index="0">Change Style</a>
+                                </li>
+                                <li><a href="#" data-md="Help_Center_by_Jekyll" data-index="1">Use Jekyll</a></li>
+                                <li><a href="#" data-md="Modify_the_configuration" data-index="0">Configuration</a></li>
+                                <li><a href="#" data-md="Use_a_theme" data-index="0">Theme</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Installation
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" data-dir="installation">
+                                <li><a href="#" data-md="install_jekyll_on_mac" data-index="1">Mac</a></li>
+                                <li><a href="#" data-md="install_jekyll_on_windows" data-index="1">Windows</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Troubleshooting
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" data-dir="troubleshooting">
+                                <li><a href="#" data-md="common_errors" data-index="1">Common Errors</a></li>
+                                <li><a href="#" data-md="generic_build_failures" data-index="1">Generic Build
+                                    Failures</a>
+                                </li>
+                                <li><a href="#" data-md="page_build_failures" data-index="1">Page Build Failures</a>
+                                </li>
+                                <li><a href="#" data-md="view_error_messages" data-index="1">View Error Messages</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </aside>
+        <!--//sidebar-->
+        <section style="min-width: 900px; background: white; min-height: 900px">
+            <ul id="breadcrumb" class="breadcrumb bread-nav"></ul>
+            <div style="height: 50px"></div>
+            <div id="markdown" class="col-sm-8 col-md-8 col-lg-8 col-xs-8"></div>
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-3 page-index">
+                <ul id="index" class="list-group "></ul>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+        <span class="robot">
+            <img th:src="@{img/chat.png}" alt=""/>
+        </span>
+
+
+        <div class="chat-box panel panel-default" hidden="hidden">
+            <div class="talk_con panel-body">
+                <div class="talk_show row pre-scrollable" id="words">
+                </div>
+                <div class="input-group">
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <input id='input' placeholder="input the question" class="form-control" type="text"
+                           style="border-radius: 0">
+                    <span class="input-group-btn">
+                        <button id="submit" class="btn btn-default" type="button"
+                                style="border-radius: 0">submit</button>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <!--//body content-->
+    </div>
+    <!--//Main Content-->
+
+</div>
+
+<script th:src="@{js/jquery.min.js}"></script>
+<script th:src="@{js/bootstrap.js}"></script>
+<script th:src="@{js/robot.js}"></script>
+<script th:src="@{js/showdown.js}"></script>
+<script>
+
+    var menu = $('#menu');
+    menu.on('click', function () {
+        $(this).toggleClass('active');
+        $('body').toggleClass('nav-open');
+    });
+
+    menu.click();
+    $('.robot').on('click', function () {
+        var chatBox = $('.chat-box');
+        if (chatBox.attr('hidden') === 'hidden') {
+            chatBox.removeAttr('hidden');
+        } else {
+            chatBox.attr('hidden', 'hidden');
+        }
+    });
+
+    requireMD('/introduction/introduction.md', '/introduction/introduction.json', ['installation']);
+
+    function requireMD(mdPath, indexPath, navInfo) {
+        var breadcrumb = $('#breadcrumb');
+        breadcrumb.empty();
+        for (var i = 0; i < navInfo.length; i++) {
+            breadcrumb.append($('<li>' + navInfo[i] + '</li>'));
+        }
+
+        $.get("/markdown" + mdPath, function (data) {
+            var converter = new showdown.Converter();
+            var html = converter.makeHtml(data);
+            var reg1 = new RegExp('showdown', "g");
+            var reg2 = new RegExp('¨', "g");
+            html = html.replace(reg1, '').replace(reg2, '');
+            $('#markdown').html(html)
+        });
+
+        var index = $('#index');
+        index.empty();
+        if (indexPath == null) {
+            return;
+        }
+        $.get("/markdown" + indexPath, function (data) {
+            for (var i in data) {
+                // noinspection JSUnfilteredForInLoop
+                index.append(createIndexItem(data[i]))
+            }
+
+        });
+
+        function createIndexItem(item) {
+            var li = $('<li><a href="#">' + item.title + '</a></li>');
+            li.children('a').on('click', function () {
+                $('html,body').animate(
+                    {
+                        scrollTop: $('#' + item.id).offset().top - 100
+                    }, 1000);
+            });
+            return li
+        }
+
+
+    }
+
+    var menus = $('.dropdown-menu');
+    menus.each(function () {
+        var menu = $(this)
+        var liList = menu.children('li')
+        liList.each(function () {
+            var a = $(this).children('a');
+            a.attr('data-stopPropagation', true);
+            var dir = menu.attr('data-dir');
+            var md = a.attr('data-md');
+            var index = a.attr('data-index');
+            var mdPath = '/' + dir + '/' + md + ".md";
+            var indexPath = index === '0' ? null : '/' + dir + '/' + md + ".json";
+            a.on('click', function () {
+                requireMD(mdPath, indexPath, [dir, md]);
+            });
+
+        })
+    });
+
+    var single = $('.single');
+    single.each(function () {
+        var a = $(this);
+        var dir = a.attr('data-dir');
+        var md = a.attr('data-md');
+        var index = a.attr('data-index');
+        var mdPath = '/' + dir + '/' + md + ".md";
+        var indexPath = index === '0' ? null : '/' + dir + '/' + md + ".json";
+        a.on('click', function () {
+            requireMD(mdPath, indexPath, [dir, index]);
+        });
+    });
+
+    $("body").on('click', '[data-stopPropagation]', function (e) {
+        e.stopPropagation();
+    });
+
+</script>
+</body>
+</html>
